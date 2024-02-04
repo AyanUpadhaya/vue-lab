@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .form-label {
+    @apply text-black-600 font-medium text-sm;
+  }
+  .form-input {
+    @apply w-full border p-4 rounded-xl placeholder:text-disable outline-none;
+  }
+  .btn-primary {
+    @apply btn text-white border-none rounded-xl h-auto min-h-min bg-mainGradient;
+  }
+  .btn-error {
+    @apply btn text-white border-none rounded-xl h-auto min-h-min bg-error-02 hover:bg-error-02;
+  }
+  .btn-cancel {
+    @apply btn text-black-700 border-none rounded-xl h-auto min-h-min bg-white-200 hover:bg-white-200;
+  }
+  .btn-cancel-100 {
+    @apply btn text-grey-100 border-none rounded-xl h-auto min-h-min bg-neutral-20 hover:bg-neutral-20;
+  }
+  .ellipsis {
+    @apply whitespace-nowrap overflow-hidden text-ellipsis;
+  }
+  
+}
+
+  /* daisy ui style end */
+  
+  ::-webkit-scrollbar {
+    width: 10px;
+    background-color: rgb(184, 174, 174);
+    border-radius: 8px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #b19797;
+    border-radius: 10px;
+  }
+  
