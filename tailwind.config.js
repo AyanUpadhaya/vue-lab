@@ -113,12 +113,16 @@ export default {
       },
 
       backgroundImage: {
-        mainGradient: " linear-gradient(90deg, #1BB287 -1.39%, #1EC96B 99.86%)",
-        gradientGreen: "linear-gradient(1deg, #1BB287 64.78%, #1EC96B 99.6%)",
-        gradientYellow: "linear-gradient(90deg, #FF647C 4.76%, #F3C84D 92.38%)",
-        bannerBg: "linear-gradient(262deg, #D282F0 11.3%, #4C8DF1 100.06%)",
-        authBg: "url('../images/authentication/authbg.png')",
-        vacationBg: "linear-gradient(269deg, #F6DD91 4.52%, #F2C963 97.75%)",
+        mainGradient: 'linear-gradient(267deg, #1BB287 0%, #1EC96B 80.45%)',
+        gradientGreen: 'linear-gradient(1deg, #1BB287 64.78%, #1EC96B 99.6%)',
+        gradientYellow: 'linear-gradient(90deg, #FF647C 4.76%, #F3C84D 92.38%)',
+        bannerBg: 'linear-gradient(262deg, #D282F0 11.3%, #4C8DF1 100.06%)',
+       
+        vacationBg: 'linear-gradient(269deg, #F6DD91 4.52%, #F2C963 97.75%)',
+        progressGradient: 'linear-gradient(267deg, #1BB287 57.81%, #1EC96B 80.45%)',
+        serviceNameGradient: 'linear-gradient(267deg, #1BB287 57.81%, #1EC96B 80.45%)',
+
+      
       },
 
       // custom box shadows

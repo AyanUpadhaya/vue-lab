@@ -26,6 +26,21 @@ import Profile from "../pages/Profile.vue";
 import Login from "../authentication/Login.vue"
 import Registration from "../authentication/Registration.vue"
 
+//experiment
+import ExperimentLayout from "../pages/ExperimentLayout.vue"
+import Dashboard from "../pages/Dashboard.vue"
+import ServiceCategory from "../pages/ServiceCategory.vue"
+import ServiceSubCategory from "../pages/ServiceSubCategory.vue"
+import WithdrawRequest from "../pages/WithdrawRequest.vue"
+import WithdrawHistory from "../pages/WithdrawHistory.vue"
+import Agents from "../pages/Agents.vue"
+import OurUsers from "../pages/OurUsers.vue"
+import Businesses from "../pages/Businesses.vue"
+
+
+
+
+
 
 import store from "../store/store"
 
@@ -130,6 +145,53 @@ const routes = [
     path:"/registration",
     component:Registration
   },
+  {
+    path:'/experiment',
+    component:ExperimentLayout,
+    children: [
+      {
+        path: "/dashboard",
+        name: "dashboard",
+        component: Home,
+      },
+      {
+        path: "/service-category",
+        name: "service-category",
+        component: ServiceCategory,
+      },
+      {
+        path: "/service-sub-category",
+        name: "service-sub-category",
+        component: ServiceSubCategory,
+      },
+      {
+        path: "/agents",
+        name: "agents",
+        component: Agents,
+      },
+      {
+        path: "/businesses",
+        name: "businesses",
+        component: Businesses,
+      },
+      {
+        path: "/withdraw-request",
+        name: "withdraw-request",
+        component: WithdrawRequest,
+      },
+      {
+        path: "/withdraw-history",
+        name: "withdraw-history",
+        component: WithdrawHistory,
+      },
+      {
+        path: "/our-users",
+        name: "our-users",
+        component: OurUsers,
+      },
+      
+    ],
+  }
 ];
 
 const router = createRouter({
